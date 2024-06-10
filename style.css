@@ -43,3 +43,28 @@ nav ul li a:hover {
   color: orangered;
   border-bottom: 1px solid orangered;
 }
+
+.menu-icon{
+  /* background-color: tomato; */
+  font-size: 28px;
+  display: none;
+}
+
+@media only screen and (max-width:768px){
+  nav{
+    flex-wrap: wrap;
+  }
+  nav ul.hidden{
+    display: none;
+  }
+
+
+  nav ul{
+    flex-direction: column;
+    width: 100%;
+  }
+  .menu-icon{
+    display: flex;
+    align-items: center;
+  }
+}
